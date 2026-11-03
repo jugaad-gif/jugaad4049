@@ -1,0 +1,541 @@
+<html>
+<head>
+<title>Strings</title>
+<style>
+ * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #333;
+      line-height: 1.5;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 20px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0b3d91, #1565c0);
+      color: white;
+      padding: 20px 20px;
+      text-align: center;
+      border-radius: 15px;
+    }
+
+    .div1 {
+      border: 2px solid #0b3d91;
+      border-radius: 15px;
+      margin: 20px auto;
+      background-color: #fff4b8;
+      color: black;
+      padding: 10px 20px;
+      width: fit-content;
+    }
+
+    .classp {
+      text-align: center;
+      margin-top: 0px;
+      display: flex;
+      align-items: center;
+       justify-content: center;
+            padding: 25px 8px;
+            color: black;
+            background: #eef5ff;
+    }
+
+    .container {
+      display: flex;
+      flex-direction:column;
+      gap: 20px;
+      margin: 20px auto;
+      max-width: 1000px;
+      width: 100%;
+    }
+
+     .card1{
+   background-color: white;
+    border: 1.5px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left-align;
+    min-width: 0;
+    width: 100%;
+    min-height: 80px;
+    transition: 0.3s;
+    }
+    
+
+     .card1:hover {
+      border-color: #1565c0;
+      box-shadow: 0 4px 12px #00000015;
+      transform: translateY(-3px);
+    }
+
+    /* Responsive layout */
+    @media (max-width: 700px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+</style>
+</head>
+
+<body>
+
+  <header>
+    <h1 style="font-size:55px;">STRINGS</h1>
+  </header>
+
+  <h2 class="classp" style="text-align: center;">STRINGS QUESTION AND ANSWERS</h2>
+
+  <p >
+    <i><center>
+      Our mission is to bridge the gap between theory and practice,
+      offering comprehensive learning materials that enable students
+      to excel in their academic and professional pursuits.
+   </center></i>
+  </p>
+
+  <div class="container">
+
+    <div class="card1"><details>
+<summary><span>Q1:-Enter a string from user and convert in uppercase ?</span></summary><pre>
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char str[100];
+
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    strupr(str);
+
+    printf("Uppercase string: %s", str);
+
+    return 0;
+}
+    </pre>
+    </details>
+    </div>
+</div>
+<div class="container">
+
+    <div class="card1">
+     <details>
+     <summary>
+     <span>Q2:-Enter a string from user and convert into lowercase ? </span>
+     </summary>
+     <pre>
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char str[100];
+
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    strlwr(str);
+
+    printf("Lowercase string: %s", str);
+
+    return 0;
+}
+             </pre>
+    </details>
+    </div>
+    </div>
+<div class="container">
+
+ <div class="card1">
+     <details>
+     <summary>
+     <span>Q3:-Enter a string from user and convert into sentence case ?</span>
+     </summary>
+     <pre>
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char str[100];
+    int i;
+
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    strlwr(str);
+
+    if(str[0] >= 'a' && str[0] <= 'z')
+    {
+        str[0] = str[0] - 32;
+    }
+
+    printf("Sentence case: %s", str);
+
+    return 0;
+}
+       </pre>
+    </details>
+    </div>
+    </div>
+<div class="container">
+<div class="card1">
+     <details>
+     <summary>
+     <span>Q4:-Enter a string from user and convert into title case ?</span>
+     </summary>
+     <pre>
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char str[100];
+    int i;
+
+    printf("Enter a string: ");
+    gets(str);
+
+    strlwr(str);
+
+    if(str[0] >= 'a' && str[0] <= 'z')
+        str[0] = str[0] - 32;
+
+    for(i = 0; str[i] != '\0'; i++)
+    {
+        if(str[i] == ' ' && str[i+1] >= 'a' && str[i+1] <= 'z')
+        {
+            str[i+1] = str[i+1] - 32;
+        }
+    }
+
+    printf("Title Case: %s", str);
+
+    return 0;
+}
+</pre>    </details>
+    </div>
+</div>
+<div class="container">
+
+ <div class="card1">
+     <details>
+     <summary>
+     <span>Q5:-Enter a string from user and convert into toggle case ??</span>
+     </summary>
+     <pre>
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char str[100];
+    int i;
+
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    for(i = 0; str[i] != '\0'; i++)
+    {
+        if(str[i] >= 'a' && str[i] <= 'z')
+            str[i] = str[i] - 32;
+
+        else if(str[i] >= 'A' && str[i] <= 'Z')
+            str[i] = str[i] + 32;
+    }
+
+    printf("Toggle Case: %s", str);
+
+    return 0;
+}         </pre>
+    </details>
+    </div>
+    </div>
+<div class="container">
+<div class="card1">
+     <details>
+     <summary>
+     <span>Q6:-Enter a string from user and final length of the string ?</span>
+     </summary>
+     <pre>
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char str[100];
+
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    printf("Length of string: %d", strlen(str));
+
+    return 0;
+}</pre>    </details>
+    </div>
+</div>
+<div class="container">
+<div class="card1">
+     <details>
+     <summary>
+     <span>Q7:-Enter a string from user and compare those string ? </span>
+     </summary>
+     <pre>
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char str1[100], str2[100];
+
+    printf("Enter first string: ");
+    scanf("%s", str1);
+
+    printf("Enter second string: ");
+    scanf("%s", str2);
+
+    if(strcmp(str1, str2) == 0)
+        printf("Strings are equal");
+    else
+        printf("Strings are not equal");
+
+    return 0;
+}
+</pre>    </details>
+    </div>
+</div>
+ <div class="container">
+
+    <div class="card1"><details>
+<summary><span>Q8:Enter a string from user and concatenate the string ?</span></summary><pre>
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char str1[100], str2[50];
+
+    printf("Enter first string: ");
+    scanf("%s", str1);
+
+    printf("Enter second string: ");
+    scanf("%s", str2);
+
+    strcat(str1, str2);
+
+    printf("Concatenated string: %s", str1);
+
+    return 0;
+}
+  </pre>
+    </details>
+    </div>
+</div>
+<div class="container">
+
+    <div class="card1"><details>
+<summary><span>Q9:Enter the data from user the data consist of roll no. ,name ,class , marks of 5 subjects ?</span></summary><pre>
+
+#include <stdio.h>
+
+int main()
+{
+    int roll, class;
+    char name[50];
+    int marks[5], i;
+
+    printf("Enter Roll Number: ");
+    scanf("%d", &roll);
+
+    printf("Enter Name: ");
+    scanf("%s", name);
+
+    printf("Enter Class: ");
+    scanf("%d", &class);
+
+    printf("Enter marks of 5 subjects:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        printf("Subject %d: ", i + 1);
+        scanf("%d", &marks[i]);
+    }
+
+    printf("\n--- Student Details ---\n");
+    printf("Roll Number: %d\n", roll);
+    printf("Name: %s\n", name);
+    printf("Class: %d\n", class);
+
+    printf("Marks of 5 Subjects:\n");
+
+    for(i = 0; i < 5; i++)
+    {
+        printf("Subject %d: %d\n", i + 1, marks[i]);
+    }
+
+    return 0;
+}  </pre>
+    </details>
+    </div>
+</div>
+<div class="container">
+
+    <div class="card1"><details>
+<summary><span>Q10:Enter the string from user and enter bound number and print character on that bound ?</span></summary><pre>
+#include <stdio.h>
+
+int main()
+{
+    char str[50];
+    int n;
+
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    printf("Enter bound number: ");
+    scanf("%d", &n);
+
+    printf("Character at position %d is: %c", n, str[n]);
+
+    return 0;
+}  </pre>
+    </details>
+    </div>
+</div>
+<div class="container">
+
+    <div class="card1"><details>
+<summary><span>Q11:Enter the string from user and count all vowels ?</span></summary><pre>
+#include <stdio.h>
+
+int main()
+{
+    char str[100];
+    int i, count = 0;
+
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    for(i = 0; str[i] != '\0'; i++)
+    {
+        if(str[i] == 'a' || str[i] == 'e' ||
+           str[i] == 'i' || str[i] == 'o' ||
+           str[i] == 'u' || str[i] == 'A' ||
+           str[i] == 'E' || str[i] == 'I' ||
+           str[i] == 'O' || str[i] == 'U')
+        {
+            count++;
+        }
+    }
+
+    printf("Total vowels = %d", count);
+
+    return 0;
+}  </pre>
+    </details>
+    </div>
+</div>
+<div class="container">
+
+    <div class="card1"><details>
+<summary><span>Q12:Enter the string from user and enter a character if it is exist then print the bound number ?</span></summary><pre>
+#include <stdio.h>
+
+int main()
+{
+    char str[100], ch;
+    int i, found = 0;
+
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    printf("Enter a character: ");
+    scanf(" %c", &ch);
+
+    for(i = 0; str[i] != '\0'; i++)
+    {
+        if(str[i] == ch)
+        {
+            printf("Character found at position: %d", i);
+            found = 1;
+            break;
+        }
+    }
+
+    if(found == 0)
+    {
+        printf("Character not found");
+    }
+
+    return 0;
+}  </pre>
+    </details>
+    </div>
+</div>
+<div class="container">
+
+    <div class="card1"><details>
+<summary><span>Q13:Enter the string from user and enter a character , it is exist or not ?</span></summary><pre>
+#include <stdio.h>
+
+int main()
+{
+    char str[100], ch;
+    int i, found = 0;
+
+    printf("Enter a string: ");
+    scanf("%s", str);
+
+    printf("Enter a character: ");
+    scanf(" %c", &ch);
+
+    for(i = 0; str[i] != '\0'; i++)
+    {
+        if(str[i] == ch)
+        {
+            found = 1;
+            break;
+        }
+    }
+
+    if(found == 1)
+    {
+        printf("Character exists");
+    }
+    else
+    {
+        printf("Character does not exist");
+    }
+
+    return 0;
+}  </pre>
+    </details>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

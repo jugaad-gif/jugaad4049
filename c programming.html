@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;padding: 0;
+    }
+    :root {
+  --bg-main: #FFFFFF;
+  --bg-card: #252538;
+  --text-main: #CDD6F4;
+  --accent: #89B4FA;
+}
+header{
+    background: linear-gradient(135deg, #0b3d91, #1565c0);
+    border-radius: 25px 35px 45px 50px;
+    padding: 15px;
+}
+.rounded-button {
+    border-radius: 10px;
+     background-color: #007bff;
+     color: white ;
+     border: black;
+}
+
+body {
+  background: #f4f7fb;
+  color: var(--text-main);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+code, pre {
+  background-color: var(--bg-card);
+  border-left: 3px solid var(--accent);
+}
+.nav1{
+    display: flex;
+    justify-content: space-between;
+}
+.c{
+    font-size: 25px; 
+    font-weight: bold;
+    color:black;
+    
+}
+.n a{
+    text-decoration: none;
+    color: var(--text-main);
+    margin: 10px;
+    font-size: 20px;
+}
+main{
+    padding:  56px 20%;
+    text-align: center;
+}
+.main1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+.box{
+
+    border-radius: 20px;
+    background: linear-gradient(135deg, #0b3d91, #1565c0);
+    transition: 0.3s;
+    margin: 10px;
+    min-height: 20vh;
+    min-width: 20vh;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+.box:hover{
+    transform: translateY(-6px);
+}
+.new{
+    font-size: 20px;
+    color: white;
+    
+}
+button{
+       margin-top: 20px;
+    background-color:#007bff;
+    border: none;}
+.hi{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    border: 5px solid #89B4FA;
+    background-color: #89B4FA;
+    border-radius:5px;
+}
+</style>
+</head>
+<body>
+    <header>
+        <div class="nav1">
+        <div class="c">C Program</div>
+        <div class="n">
+        <a href="C:\Users\jugad\Desktop\programs\hoem.html">Home</a> |
+        <a href="">Program</a> |
+        <a href="">About</a> 
+        </div>
+        </div>
+    </header>
+    <main>
+        <div class="main1">
+     <div class="box">
+        <span class="new">Basic Input Output </span>
+        <br>
+         <button class="rounded-button"><a href="index1.html" class="hi">View Program</a></button>
+     </div>
+     <div class="box">
+        <span class="new">STRINGS </span>
+        <br>
+         <button><a href="index10.html" class="hi">View Program</a></button>
+     </div>
+     <div class="box"><span class="new">Functions </span>
+        <br>
+         <button><a href="index4.html" class="hi">View Program</a></button></div>
+      <div class="box">
+        <span class="new">ITERATIVE CONTROL STRUCTURE (LOOPS) </span>
+        <br>
+         <button><a href="index6.html" class="hi">View Program</a></button>
+     </div>
+
+<div class="box">
+        <span class="new">SINGLE DIMENSION ARRAYS</span>
+        <br>
+         <button><a href="index13.html" class="hi">View Program</a></button>
+     </div>
+     <div class="box">
+        <span class="new">OPERATORS</span>
+        <br>
+         <button><a href="index20.html" class="hi">View Program</a></button>
+     </div>
+        </div>
+    </main>
+</body>
+</html>
+
+

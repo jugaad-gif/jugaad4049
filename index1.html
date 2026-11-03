@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic Input Output Statements</title>
+<style>
+        header {
+      background: linear-gradient(135deg, #0b3d91, #1565c0);
+      color: white;
+      padding: 35px 20px;
+      text-align: center;
+      border-radius: 15px;
+       }
+
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+             }
+        .div {
+            font-family: Arial;
+            font-size: 15px;
+            text-decoration: none;
+            text-transform: none;
+            background-color: white;
+            background-repeat: no-repeat;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            border-style: solid;
+            border-width: 1.2px;
+            border-radius: 18px;
+            color: black;
+            transition: 0.3s;
+            overflow: ;
+            opacity: 0.8;
+            box-shadow: 0px 0px 8px 2px #444444;
+            margin-left:10px;
+            margin-right:px;
+            margin-top:10px;
+            margin-bottom:10px;
+            widht:90px;
+            height:350px;
+            
+           
+        }
+
+        .div:hover {
+            border-color: yellow;
+            transform: translateY(-6px);
+        }
+
+          .border:hover {
+            color: green;
+        }
+       input:checked
+        {
+           accent-color:white;
+        }
+       input:focus
+        {
+         background-color:white;
+         border: 2px solid blue;
+        }  
+       .active:active
+        {
+         background-color:white;
+         }       
+    </style>
+</head>
+
+<body>
+<header>
+
+  <h1 class="border" style="text-align: center;">
+        Basic Input Output Statements:
+    </h1>
+</header>
+
+    <h2><center>C Programming Questions</center></h2>
+<div class="container">
+
+      <div class="div">
+        <h3><b><i>Question 1:-Write a program to print the message:</i></b></h3>
+        <hr>
+        <pre>
+#include<stdio.h>
+void main()
+{
+    printf("Today I made my first C Program.");
+}
+        </pre>
+    </div>
+
+    <div class="div">
+        <h3><b><i>Question 2:-Write a program to read a character from          the keyboard and display it on the screen.</i></b></h3>
+        <hr>
+        <pre>
+#include <stdio.h>
+
+void main()
+{
+    char ch;
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+    printf("Character = %c", ch);
+}
+        </pre>
+    </div>
+
+       <div class="div">
+        <h3><b><i>Question 3:-Write a program to print your name at center of the first line?</i></b></h3>
+        <hr>
+        <pre>
+#include <stdio.h>
+
+void main()
+{
+    printf("\t\tYour Name");
+}
+        </pre>
+    </div>
+
+    <div class="div">
+        <h3><b><i>Question-4:-Write a program to store single quote and print that variable to show single quote on output screen</i></b></h3>
+        <hr>
+        <pre>
+#include <stdio.h>
+
+void main()
+{
+    char ch = '\'';
+    printf("%c", ch);
+}
+        </pre>
+    </div><br><br>
+<div>
+</div><br><br>
+</div>
+<div class="div">
+        <h3><b><i>Question-3:-keep it simple Print all ASCII character 0 to 127 ? c language</i></b></h3>
+        <hr>
+        <pre>
+#include <stdio.h>
+
+int main() {
+    int i;
+
+    for (i = 0; i <= 127; i++) {
+        printf("%d = %c\n", i, i);
+    }
+
+    return 0;
+}        </pre>
+    </div><br><br>
+<div>
+</div><br><br>
+</div>
+<div class="div">
+        <h3><b><i>Question-4:-Enter two character from user and print ASCII value ?</i></b></h3>
+        <hr>
+        <pre>
+#include <stdio.h>
+
+int main() {
+    char a, b;
+
+    printf("Enter two characters: ");
+    scanf(" %c %c", &a, &b);
+
+    printf("ASCII value of %c = %d\n", a, a);
+    printf("ASCII value of %c = %d\n", b, b);
+
+    return 0;
+}        </pre>
+    </div><br><br>
+<div class="div">
+        <h3><b><i>Question-5:-Enter password display like ****** ?</i></b></h3>
+        <hr>
+        <pre>
+#include <stdio.h>
+
+int main() {
+    char password[50];
+    int i;
+
+    printf("Enter password: ");
+    scanf("%s", password);
+
+    printf("Password: ");
+
+    for (i = 0; password[i] != '\0'; i++) {
+        printf("*");
+    }
+
+    return 0;
+}        </pre>
+    </div><br><br>
+
+<div>
+</div><br><br>
+</div>
+
+</body>
+</html>

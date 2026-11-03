@@ -1,0 +1,304 @@
+<html>
+<head>
+<title>OPERATORS</title>
+<style>
+ * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f4f7fb;
+      color: #333;
+      line-height: 1.5;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 20px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0b3d91, #1565c0);
+      color: white;
+      padding: 20px 20px;
+      text-align: center;
+      border-radius: 15px;
+    }
+
+    .div1 {
+      border: 2px solid #0b3d91;
+      border-radius: 15px;
+      margin: 20px auto;
+      background-color: #fff4b8;
+      color: black;
+      padding: 10px 20px;
+      width: fit-content;
+    }
+
+    .classp {
+      text-align: center;
+      margin-top: 0px;
+      display: flex;
+      align-items: center;
+       justify-content: center;
+            padding: 25px 8px;
+            color: black;
+            background: #eef5ff;
+    }
+
+    .container {
+      display: flex;
+      flex-direction:column;
+      gap: 20px;
+      margin: 20px auto;
+      max-width: 1000px;
+      width: 100%;
+    }
+
+     .card1{
+   background-color: white;
+    border: 1.5px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: left-align;
+    min-width: 0;
+    width: 100%;
+    min-height: 80px;
+    transition: 0.3s;
+    }
+    
+
+     .card1:hover {
+      border-color: #1565c0;
+      box-shadow: 0 4px 12px #00000015;
+      transform: translateY(-3px);
+    }
+
+    /* Responsive layout */
+    @media (max-width: 700px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+</style>
+</head>
+
+<body>
+
+  <header>
+    <h1 style="font-size:55px;">OPERATORS</h1>
+  </header>
+
+  <h2 class="classp" style="text-align: center;">OPEARTORS QUESTION AND ANSWERS</h2>
+
+  <p >
+    <i><center>
+      Our mission is to bridge the gap between theory and practice,
+      offering comprehensive learning materials that enable students
+      to excel in their academic and professional pursuits.
+   </center></i>
+  </p>
+
+  <div class="container">
+
+    <div class="card1"><details>
+<summary><span>Q1:Write a program to show that example of pre-increment ?</span></summary><pre>
+
+#include <stdio.h>
+
+int main()
+{
+    int a = 10;
+
+    printf("Before increment = %d\n", a);
+
+    printf("After pre-increment = %d\n", ++a);
+
+    return 0;
+}   </pre>
+    </details>
+    </div>
+</div>
+<div class="container">
+
+    <div class="card1">
+     <details>
+     <summary>
+     <span>Q2:Write a program to show that example of post-increment ?</span>   </summary>
+     <pre>
+
+#include <stdio.h>
+
+int main()
+{
+    int a = 10;
+
+    printf("Before increment = %d\n", a);
+
+    printf("After post-increment = %d\n", a++);
+
+    printf("Final value = %d\n", a);
+
+    return 0;
+}             </pre>
+    </details>
+    </div>
+    </div>
+<div class="container">
+
+ <div class="card1">
+     <details>
+     <summary>
+     <span>Q3:-Write a program to show that example of pre-decrement ?</span>
+     </summary>
+     <pre>
+
+#include <stdio.h>
+
+int main()
+{
+    int a = 10;
+
+    printf("Before decrement = %d\n", a);
+
+    printf("After pre-decrement = %d\n", --a);
+
+    return 0;
+}       </pre>
+    </details>
+    </div>
+    </div>
+<div class="container">
+<div class="card1">
+     <details>
+     <summary>
+     <span>Q4:-Write a program to show that example of post-decrement ?</span>
+     </summary>
+     <pre>
+
+#include <stdio.h>
+
+int main()
+{
+    int a = 10;
+
+    printf("Before decrement = %d\n", a);
+
+    printf("After post-decrement = %d\n", a--);
+
+    printf("Final value = %d\n", a);
+
+    return 0;
+}</pre>    </details>
+    </div>
+</div>
+<div class="container">
+
+ <div class="card1">
+     <details>
+     <summary>
+     <span>Q5:Write a program to enter a number from the user ,the length of the number is depend on the user ,programmer should print the last digit of number ?</span>
+     </summary>
+     <pre>
+
+#include <stdio.h>
+
+int main()
+{
+    int n, last;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    last = n % 10;
+
+    printf("Last digit = %d", last);
+
+    return 0;
+}      </pre>
+    </details>
+    </div>
+    </div>
+<div class="container">
+<div class="card1">
+     <details>
+     <summary>
+     <span>Q6:-Enter a decimal number from the user (float) and print the right hand side of the decimal point ?</span>
+     </summary>
+     <pre>
+
+#include <stdio.h>
+
+int main()
+{
+    float n;
+    int decimal;
+
+    printf("Enter a decimal number: ");
+    scanf("%f", &n);
+
+    decimal = (int)(n * 10) % 10;
+
+    printf("Right hand side digit = %d", decimal);
+
+    return 0;
+}</pre>    </details>
+    </div>
+</div>
+<div class="container">
+<div class="card1">
+     <details>
+     <summary>
+     <span>Q7:-Enter a number from user and find out cube of numbers ?</span>
+     </summary>
+     <pre>
+
+#include <stdio.h>
+
+int main()
+{
+    int n, cube;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    cube = n * n * n;
+
+    printf("Cube of number = %d", cube);
+
+    return 0;
+}</pre>    </details>
+    </div>
+</div>
+ <div class="container">
+
+    <div class="card1"><details>
+<summary><span>Q8:Enter float number from user and round of the number ?</span></summary><pre>
+
+#include <stdio.h>
+
+int main()
+{
+    float n;
+    int round;
+
+    printf("Enter a float number: ");
+    scanf("%f", &n);
+
+    round = n + 0.5;
+
+    printf("Round off number = %d", round);
+
+    return 0;
+}  </pre>
+    </details>
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
